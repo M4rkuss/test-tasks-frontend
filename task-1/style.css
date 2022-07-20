@@ -1,0 +1,109 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flag-wrap {
+    padding: 30px;
+}
+
+.flag {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #000;
+}
+.flag:not(:first-child) {
+    margin-top: 15px;
+}
+
+.flag .flag-ukraine-top {
+    width: 100%;
+    height: 50%;
+    background: deepskyblue;
+}
+.flag .flag-ukraine-bottom {
+    width: 100%;
+    height: 50%;
+    background: yellow;
+}
+
+.flag.japan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag .flag-japan {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #b6012a;
+}
+
+.flag.iceland {
+    background: #00519d;
+    position: relative;
+}
+
+.iceland-white-cross {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.iceland-white-cross:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 150px;
+    background: #fff;
+    top: -60px;
+    left: 60px;
+}
+
+.iceland-red-cross {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: crimson;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iceland-red-cross:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    background: crimson;
+    top: -70px;
+    left: 70px;
+}
+
+.сzech {
+    position: relative;
+}
+.сzech-white {
+    width: 100%;
+    height: 50%;
+    background: #fff;
+}
+.сzech-red {
+    width: 100%;
+    height: 50%;
+    background: crimson;
+}
+.сzech-triangle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 75px 0 75px 120px;
+    border-color: transparent transparent transparent #11437a;
+}
